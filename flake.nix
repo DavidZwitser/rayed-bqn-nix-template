@@ -20,11 +20,11 @@
 
       packages.default = pkgs.writeShellScriptBin "run" /*bash*/ ''
         # Setting up rayed-bqn and its submodules
-        git submodule update --init --recursive
+        # git submodule update --init --recursive
 
-        # Editing the config to use Nix paths
-        echo "raylibheaderpath ⇐ •file.At \"${raylib}/include/raylib.h\"" > "./rayed-bqn/config.bqn"
-        echo "rayliblibpath ⇐ •file.At \"${raylib}/lib/libraylib.dylib\"" >> "./rayed-bqn/config.bqn"
+        # # Editing the config to use Nix paths
+        # echo "raylibheaderpath ⇐ •file.At \"${raylib}/include/raylib.h\"" > "./rayed-bqn/config.bqn"
+        # echo "rayliblibpath ⇐ •file.At \"${raylib}/lib/libraylib.dylib\"" >> "./rayed-bqn/config.bqn"
 
         # Running the program
      	  ${cbqn}/bin/bqn -f ./src/main.bqn
