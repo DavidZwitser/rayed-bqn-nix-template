@@ -6,6 +6,8 @@
     flake-utils.url = "github:numtide/flake-utils";
     bqnlsp.url = "sourcehut:~detegr/bqnlsp";
     rayed-bqn.url = "github:DavidZwitser/rayed-bqn";
+    # Get specific verion of raylib
+    # raylib.url = "github:"
   };
 
   outputs = { self, nixpkgs, flake-utils, bqnlsp, rayed-bqn}:
@@ -22,9 +24,8 @@
         # Setting up rayed-bqn and its submodules
         git submodule update --init --recursive
 
-        # Editing the config to use Nix paths
-        echo "raylibheaderpath ⇐ •file.At \"${raylib}/include/raylib.h\"" > "./rayed-bqn/config.bqn"
-        echo "rayliblibpath ⇐ •file.At \"${raylib}/lib/libraylib.dylib\"" >> "./rayed-bqn/config.bqn"
+        mkdir ./rayed-bqn/lib
+        ln -sf ${raylib}/lib/libraylib.dylib ./rayed-bqn/lib/libraylib.dylib
 
         # Running the program
      	  ${cbqn}/bin/bqn -f ./src/main.bqn
@@ -34,6 +35,7 @@
         buildInputs = [
           cbqn
           bqnlspPkg
+          pkgs.nixd
         ];
       };
   });
