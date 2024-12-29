@@ -193,14 +193,17 @@
         "nixpkgs": "nixpkgs_5"
       },
       "locked": {
-        "lastModified": 1735408252,
-        "narHash": "sha256-yOVUcAauga9sKqrifhKLZ7W/e9NOiMusQRfDB5ulGh8=",
-        "path": "/tmp/rayed-bqn",
-        "type": "path"
+        "lastModified": 1735475828,
+        "narHash": "sha256-omTdF3XVAXHMX+JlO4m0VZ321z+xkKgKhwQtjlsxyN0=",
+        "owner": "DavidZwitser",
+        "repo": "rayed-bqn",
+        "rev": "415b2c8cb3e105d6d275dcbe067a923e884e2d7e",
+        "type": "github"
       },
       "original": {
-        "path": "/tmp/rayed-bqn",
-        "type": "path"
+        "owner": "DavidZwitser",
+        "repo": "rayed-bqn",
+        "type": "github"
       }
     },
     "root": {
