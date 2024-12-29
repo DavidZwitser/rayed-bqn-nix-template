@@ -175,18 +175,16 @@
     },
     "nixpkgs_5": {
       "locked": {
-        "lastModified": 1720418205,
-        "narHash": "sha256-cPJoFPXU44GlhWg4pUk9oUPqurPlCFZ11ZQPk21GTPU=",
-        "owner": "nixos",
+        "lastModified": 1735268880,
+        "narHash": "sha256-7QEFnKkzD13SPxs+UFR5bUFN2fRw+GlL0am72ZjNre4=",
+        "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "655a58a72a6601292512670343087c2d75d859c1",
+        "rev": "7cc0bff31a3a705d3ac4fdceb030a17239412210",
         "type": "github"
       },
       "original": {
-        "owner": "nixos",
-        "ref": "nixos-unstable",
-        "repo": "nixpkgs",
-        "type": "github"
+        "id": "nixpkgs",
+        "type": "indirect"
       }
     },
     "rayed-bqn": {
@@ -195,17 +193,14 @@
         "nixpkgs": "nixpkgs_5"
       },
       "locked": {
-        "lastModified": 1720623300,
-        "narHash": "sha256-yYyM444rnv54l1eW+NP1a5b59js23S+FlGoqeL1gNEo=",
-        "owner": "DavidZwitser",
-        "repo": "rayed-bqn",
-        "rev": "29f28eb8724780107a9d7e9ce6b5baca25896d46",
-        "type": "github"
+        "lastModified": 1735408252,
+        "narHash": "sha256-yOVUcAauga9sKqrifhKLZ7W/e9NOiMusQRfDB5ulGh8=",
+        "path": "/tmp/rayed-bqn",
+        "type": "path"
       },
       "original": {
-        "owner": "DavidZwitser",
-        "repo": "rayed-bqn",
-        "type": "github"
+        "path": "/tmp/rayed-bqn",
+        "type": "path"
       }
     },
     "root": {
